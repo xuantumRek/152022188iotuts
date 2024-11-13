@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydroponic System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hydroponic Data</h1>
+
+        <section id="sensor-data">
+            <h2>Sensor Data</h2>
+
+            <div id="suhu_max" class="sensor-card">
+                <i class="fas fa-temperature-high"></i> Max Temperature
+            </div>
+            <div id="suhu_min" class="sensor-card">
+                <i class="fas fa-temperature-low"></i> Min Temperature
+            </div>
+            <div id="suhu_rata" class="sensor-card">
+                <i class="fas fa-thermometer-half"></i> Mean Temperature
+            </div>
+
+            <h3>Max Temperature and Max Humidity Values</h3>
+            <div id="nilai_suhu_max_humid_max" class="data-table">
+                <div class="data-row header">
+                    <div>ID</div>
+                    <div>Temperature (°C)</div>
+                    <div>Humidity (%)</div>
+                    <div>Luminance</div>
+                    <div>Timestamp</div>
+                </div>
+                <!-- Data rows will be populated here by JS -->
+            </div>
+
+            <h3>Max Month/Year</h3>
+            <ul id="month_year_max" class="data-list"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
